@@ -8,7 +8,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 200vh;
+    height: fit-content;
 }
 header {
     z-index: 1;
