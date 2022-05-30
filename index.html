@@ -1,42 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Хайртай охин</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mandali&family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mandali&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
             font-family: 'Mandali', sans-serif;
         }
+
         header {
-            background-color: antiquewhite;
+            background-color: rgba(0, 0, 0, 0.334);
             display: flex;
             flex-direction: row;
             height: 60px;
-            width: 100vw;
+            width: 70vw;
             position: fixed;
-            top: 0;
+            top: 10px;
+            left: 15vw;
             justify-content: space-around;
             align-items: center;
+            border-radius: 50px;
         }
+
         header a {
             text-decoration: none;
             color: black;
             text-transform: lowercase;
         }
 
+        header a:hover {
+            color: pink;
+            transition: linear all 1s;
+            border-bottom: 2s solid black;
+        }
+
+        main {
+            background-image: url(../LOOOOVE/lolo.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: 80vw;
+            margin-top: 70px;
+            margin-left: 10vw;
+            height: 100vh;
+            position: relative;
+        }
+        #top-text {
+            background-color: aquamarine;
+            font-size:35px;
+            position: absolute;
+            top: 60%;
+        }
     </style>
 </head>
+
 <body>
     <header>
         <a href="./memories.html">Дурсамжууд</a>
         <a href="">Зураг</a>
         <a href="">Өдөрүүд</a>
     </header>
+    <main>
+        <div id="top-text">Ийм хөөрхөн охинд дурласаан...</div>
+    </main>
 </body>
+
 </html>
