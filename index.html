@@ -14,7 +14,10 @@
             margin: 0;
             font-family: 'Mandali', sans-serif;
         }
-
+        .container {
+            background-color: rgb(86, 255, 255);
+            height: 100vh;
+        }
         header {
             background-color: rgba(0, 0, 0, 0.334);
             display: flex;
@@ -38,14 +41,46 @@
         header a:hover {
             color: rgb(255, 255, 255);
         }
+        main {
+            width: 100vw;
+            height: 100vh;
+            background-color: bisque;
+        }
+        #pics {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 50% 50%;
+        }
+        #pics img {
+            gap: 5px;
+            height: 100%;
+            max-height: 320px;
+            width: 100%;
+            align-self: center;
+            opacity: 1;
+        }
     </style>
 </head>
 
 <body>
-    <header>
-        <a href="./memories.html">Дурсамжууд</a>
-        <a href="">Зураг</a>
-        <a href="">Өдөрүүд
+    <div class="container">
+        <header>
+            <a href="./memories.html">Дурсамжууд</a>
+            <a href="">Зураг</a>
+            <a href="">Өдөрүүд</a>
+        </header>
+        <main>
+            <div id="pics">
+                <img src="./LOOOOVE/lovee (1).jpg" alt="">
+                <img src="./LOOOOVE/lovee (2).jpg" alt="">
+                <img src="./LOOOOVE/lovee (3).jpg" alt="">
+                <img src="./LOOOOVE/lovee (14).jpg" alt="">
+                <img src="./LOOOOVE/lovee (16).jpg" alt="">
+                <img src="./LOOOOVE/lovee (4).jpg" alt="">
+            </div>
+        </main>
+    </div>
+    
 </body>
 
 </html>
