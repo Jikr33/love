@@ -5,12 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memories together</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6a8ff321a9.js" crossorigin="anonymous"></script>
+    <style>
+        .container {
+            background-image: url(./LOOOOVE/lovee\ \(13\).jpg);
+            background-position:top;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            padding-top: 150px;
+            background-size: cover;
+        }
+        .memory {
+            background-color: rgba(255, 255, 255, 0.437);
+            margin-left: 10%;
+            height: fit-content;
+            width: 80%;
+            margin-top: 50px;
+        }
+        .memories .images {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+        .memories img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .memories h1 {
+            margin: 15px;
+        }
+        .memories p {
+            margin: 5px;
+            margin-left: 15px;
+        }
+        #sticky {
+            background-color: #459cdc8f;
+            color: rgb(252, 252, 252);
+            width: 80%;
+            height: 30px;
+            position: sticky;
+            top:75px;
+            margin-left: 10%;
+            text-align: center;
+        }
+
+    </style>
 </head>
 <body>
-    <header>
-        <a href="">Дурсамжууд</a>
-        <a href="">Зураг</a>
-        <a href="">Өдөрүүд</a>
-    </header>
+    <div class="container">
+        <header>
+            <a href="./index.html"><i class="fa-solid fa-heart"></i></a>
+            <a href="./memories.html">Дурсамжууд</a>
+            <a href="">Зураг</a>
+            <a href="">Өдөрүүд</a>
+        </header>
+        <h3 id="sticky">Хамт өнгөрүүлсэн дурсамжууд гэхиймүү...</h3>
+        <div class="memories">
+            <div class="memory">
+                <h1>2022/05/15 sunday</h1>
+                <p>Анх үерхсэн өдөр байлаа...</p>
+                <p>Зурган дээр нэг гөлийсөн гарчиж. Яаху?</p>
+                <div class="images">
+                    <img src="./LOOOOVE/./lovee (1).jpeg" alt="">
+                    <img src="./LOOOOVE/lovee (2).jpeg" alt="">
+                    <img src="./LOOOOVE/lovee (3).jpeg" alt="">
+                    <img src="./LOOOOVE/lovee (4).jpeg" alt="">
+                </div>
+                   
+            </div>
+                
+        </div>
+    </div>
+        
 </body>
 </html>
