@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    font-family: 'Mandali', sans-serif;
+}
+.container {
+    background-image: url(./LOOOOVE/lovee\ \(11\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 200vh;
+}
+header {
+    z-index: 1;
+    background-color: rgba(192, 86, 86, 0.334);
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    width: 70vw;
+    position: fixed;
+    top: 15px;
+    left: 15vw;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+}
+header i {
+    color: red;
+    font-size: 40px;
+    padding-left: 30px;
+}
+header a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: lowercase;
+}
+
+header a:hover {
+    color: rgb(255, 255, 255);
+}
+main {
+    width: 100vw;
+    height: 100vh;
+}
+#pics {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    position:relative;
+}
+#pics img {
+    gap: 5px;
+    height: 100%;
+    width: 100%;
+    align-self: center;
+    opacity: 1;
+}
+#pics > h1 {
+    position: absolute;
+    top: 50%;
+    width: 80%;
+    height: 10%;
+    padding-left: 20%;
+    background-color: rgba(255, 136, 156, 0.419);
+    color: rgb(255, 255, 255);
+}

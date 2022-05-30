@@ -9,31 +9,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mandali&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6a8ff321a9.js" crossorigin="anonymous"></script>
     <style>
         * {
             margin: 0;
             font-family: 'Mandali', sans-serif;
         }
         .container {
-            
-            background-color: rgb(86, 255, 255);
-            height: 2000vh;
+            background-image: url(./LOOOOVE/lovee\ \(11\).jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            height: 200vh;
         }
         header {
             z-index: 1;
-            background-color: rgba(0, 0, 0, 0.334);
+            background-color: rgba(192, 86, 86, 0.334);
             display: flex;
             flex-direction: row;
             height: 60px;
             width: 70vw;
             position: fixed;
-            top: 10px;
+            top: 15px;
             left: 15vw;
             justify-content: space-around;
             align-items: center;
             border-radius: 50px;
         }
-
+        header i {
+            color: red;
+            font-size: 40px;
+            padding-left: 30px;
+        }
         header a {
             text-decoration: none;
             color: rgb(255, 255, 255);
@@ -70,27 +78,13 @@
             background-color: rgba(255, 136, 156, 0.419);
             color: rgb(255, 255, 255);
         }
-        .video {
-            width: 100vw;
-            height: 70vh;
-            background-color: bisque;
-            display: grid;
-            position: relative;
-            grid-template-columns: 1fr 2fr;
-        }
-        .video video {
-            width: 50%;
-            height: 80%;
-            position: absolute;
-            left: 0;
-            transform: rotate(270deg);
-        }
     </style>
 </head>
 
 <body>
     <div class="container">
         <header>
+            <a href="./index.html"><i class="fa-solid fa-heart"></i></a>
             <a href="./memories.html">Дурсамжууд</a>
             <a href="">Зураг</a>
             <a href="">Өдөрүүд</a>
@@ -104,11 +98,6 @@
                 <img src="./LOOOOVE/lovee (16).jpg" alt="">
                 <img src="./LOOOOVE/lovee (4).jpg" alt="">
                 <h1>Зөндөө их хайртай шүү...</h1>
-            </div>
-            <div class="video">
-                <video autoplay>
-                    <source src="./LOOOOVE/gerlee.mp4" type="video/mp4">
-                </video>
             </div>
         </main>
     </div>
