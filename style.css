@@ -23,6 +23,11 @@ header {
     justify-content: space-around;
     align-items: center;
     border-radius: 50px;
+    /* Created with https://www.css-gradient.com */
+    background: #8014eb6f;
+    background: -webkit-radial-gradient(center, #8014eb75, #ffa8d971);
+    background: -moz-radial-gradient(center, #8014eb6a, #ffa8d965);
+    background: radial-gradient(ellipse at center, #8014eb67, #ffa8d969);
 }
 header i {
     color: red;
