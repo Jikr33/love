@@ -72,23 +72,9 @@ main {
 }
 
 /* media screen, screen res = 450px */
-@media (max-width: 450px) {
+@media screen and (max-width: 450px) {
     header {
         width: 90vw;
         left: 5vw;
-    }
-    #pics {
-        height: 100vh;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
-    #pics > h1 {
-        font-size: 10px;
-        top: 33.3%;
-        height: 3%;
-        text-align: center;   
-        padding: 0;
-        width: 100vw;
     }
 }
