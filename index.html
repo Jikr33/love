@@ -54,11 +54,14 @@
         #calendar {
             width: 100%;
             height: fit-content;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         #calendar-body {
             width: 80%;
             height: 550px;
-            padding: 10%;
+            /* padding: 10%; */
             background: fixed rgba(0, 0, 0, 0.307);
         }
         @media screen and (max-width: 450px) {
@@ -82,9 +85,12 @@
             }
 
             #calendar-body {
-                width: 100%;
-                padding: 0;
+                width: 95%;
+                /* padding: 0; */
                 margin-top: 5%;
+                margin-left: auto;
+                margin-right: auto;
+                /* margin-top: 5%; */
             }
         }
     </style>
