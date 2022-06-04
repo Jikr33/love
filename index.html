@@ -22,7 +22,7 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
-            height: 200vh;
+            height: fit-content;
         }
         main {
             width: 100vw;
@@ -51,6 +51,16 @@
             background-color: rgba(255, 71, 102, 0.597);
             color: rgb(255, 255, 255);
         }
+        #calendar {
+            width: 100%;
+            height: fit-content;
+        }
+        #calendar-body {
+            width: 80%;
+            height: 550px;
+            padding: 10%;
+            background: fixed rgba(0, 0, 0, 0.307);
+        }
         @media screen and (max-width: 450px) {
             header {
                 width: 90vw;
@@ -69,6 +79,10 @@
                 text-align: center;   
                 padding: 0;
                 width: 100vw;
+            }
+            #calendar-body {
+                width: 100%;
+                padding: 0;
             }
         }
     </style>
@@ -93,6 +107,9 @@
                 <h1>Зөндөө их хайртай шүү... &hearts; &hearts; &hearts;</h1>
             </div>
         </main>
+        <div id="calendar">
+            <iframe id="calendar-body" src="https://calendar.google.com/calendar/embed?height=700&wkst=2&bgcolor=%23ffffff&ctz=Asia%2FChoibalsan&showCalendars=1&showTabs=1&title=Munkhsuld%20plans&showNav=1&mode=MONTH&hl=en&src=bXVua2h1dXN1bGRAZ21haWwuY29t&src=ZW4ubW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%2333B679&color=%23009688" style="border:solid 1px #777" width="805" height="700" frameborder="0" scrolling="no"></iframe>
+        </div>
     </div>
 
     <script src="./script.js"></script>
