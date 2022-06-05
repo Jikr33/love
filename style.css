@@ -71,6 +71,12 @@ main {
     color: rgb(255, 255, 255);
 }
 
+audio {
+    width: 100%;
+    height: 20px;
+    position: fixed;
+    bottom: 0;
+}
 /* media screen, screen res = 450px */
 @media screen and (max-width: 450px) {
     header {
