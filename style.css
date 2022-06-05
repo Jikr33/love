@@ -83,4 +83,8 @@ audio {
         width: 90vw;
         left: 5vw;
     }
+    audio {
+        position: fixed;
+        bottom: 0;
+    }
 }
