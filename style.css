@@ -9,6 +9,7 @@
     background-attachment: fixed;
     background-size: cover;
     height: fit-content;
+    padding-bottom: 20vh;
 }
 header {
     z-index: 1;
