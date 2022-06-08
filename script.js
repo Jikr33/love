@@ -21,4 +21,25 @@ else {
     }
 }
 // localStorage.clear();
-console.log(hours);
+console.log(localStorage.getItem('setupTime', now));
+
+// play music
+// 1 is toohguildee
+// 2 is my mother told me
+var audio = null;
+
+function play(number){
+    if (audio != null){
+        audio.pause();
+    }
+    if (number == 'stop'){
+        audio.pause();
+    }
+    else {
+        var arr = ["toohguildee.mp3", "my-mother-told-me.mp3", 'badboys.mp3']
+        var music = new Audio('./songs/' + arr[parseInt(number) - 1]);
+        audio = music;
+        music.play();
+    }
+    
+}

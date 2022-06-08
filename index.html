@@ -64,6 +64,24 @@
             /* padding: 10%; */
             background: fixed rgba(0, 0, 0, 0.307);
         }
+        #music {
+            width:fit-content;
+            height: fit-content;
+            padding: 10px;
+            margin: 20px auto;
+            color: rgba(233, 237, 159, 0.808);
+            background-image: linear-gradient(360deg, rgb(6, 52, 255), rgb(0, 255, 26));
+            border-radius: 20px;
+            box-shadow: 1px 2px 15px 2px rgb(41, 97, 63);
+            border: solid 2px rgb(41, 97, 63);
+        }
+        select {
+            background-color: rgb(47, 142, 137);
+        }
+        option {
+            color: black;
+        }
+    
         @media screen and (max-width: 450px) {
             header {
                 width: 90vw;
@@ -122,11 +140,17 @@
         <div id="calendar">
             <iframe id="calendar-body" src="https://calendar.google.com/calendar/embed?height=700&wkst=2&bgcolor=%23ffffff&ctz=Asia%2FChoibalsan&showCalendars=1&showTabs=1&title=Munkhsuld%20plans&showNav=1&mode=MONTH&hl=en&src=bXVua2h1dXN1bGRAZ21haWwuY29t&src=ZW4ubW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%2333B679&color=%23009688" style="border:solid 1px #777" width="805" height="700" frameborder="0" scrolling="no"></iframe>
         </div>
-        
         <!-- hidden -->
-        <audio autoplay controls title='Тоохгүйлдээ...'>
-            <source src="./toohguildee.mp3">
-        </audio>
+        <select name="music" id="music">
+            <option selected value="дуу сонсийёоо" onclick="play('stop')">дуу сонсийёоо</option>
+            <option value="1" onclick="play(value)">Тоохгүйлдээ</option>
+            <option value="2" onclick="play(value)">My mother told me</option>
+            <option value="3" onclick="play(value)">Bad Boys</option>
+        </select>
+
+        <!-- <button onclick="play(1)">Тоохгүйлдээ</button>
+        <button onclick="play(2)">My mother told me</button>
+        <button onclick="play(3)">Bad Boys</button> -->
     </div>
 
     <script src="./script.js"></script>
