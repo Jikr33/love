@@ -69,15 +69,17 @@
             position: fixed;
             left: 5%;
             bottom: 1%;
-            width:fit-content;
-            height: fit-content;
+            /* width:80px;
+            height: 50px; */
             padding: 10px;
-            margin: 20px auto;
-            color: rgba(233, 237, 159, 0.808);
-            background-image: linear-gradient(360deg, rgb(6, 52, 255), rgb(0, 255, 26));
-            border-radius: 20px;
-            box-shadow: 1px 2px 15px 2px rgb(41, 97, 63);
-            border: solid 2px rgb(41, 97, 63);
+            font-size: 15px;
+            text-shadow: rgba(255, 0, 0, 0.705) -2px 1px, rgba(0, 255, 255, 0.732) 2px -1px;
+            /* margin: 20px auto; */
+            color: rgba(0, 0, 0, 0.808);
+            background-color: rgba(255, 255, 255, 0.551);
+            border-radius: 30px;
+            box-shadow: 1px 2px 15px 2px rgba(255, 255, 255, 0.449);
+            border: none;
         }
         select {
             background-color: rgb(47, 142, 137);
@@ -153,7 +155,7 @@
         </div>
         <!-- hidden -->
         <select name="music" id="music">
-            <option selected value="дуу сонсийёоо" onclick="play('stop')">дуу сонсийёоо</option>
+            <option selected value="songs" onclick="play('stop')">songs</option>
             <option value="1" onclick="play(value)">Тоохгүйлдээ</option>
             <option value="2" onclick="play(value)">My mother told me</option>
             <option value="3" onclick="play(value)">Bad Boys</option>
